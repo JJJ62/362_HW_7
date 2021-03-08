@@ -2,6 +2,7 @@ import unittest
 from FizzBuzz import is_Fizz
 from FizzBuzz import is_Buzz
 from FizzBuzz import print_num
+from FizzBuzz import main
 # Read program specification
 # Write initial test and run it to ensure it fails
 # Commit changes, Example: "Wrote first test, {test description}”
@@ -29,3 +30,7 @@ class TestFizzBuzz(unittest.TestCase):
     def test_num(self):
         result = print_num()
         self.assertEqual(result, num_array)
+    #if the nuber of Fizz and FizzBuzz are correct it returns 1
+    def test_whole():
+        result = main()
+        self.assertEqual(result, 1)
