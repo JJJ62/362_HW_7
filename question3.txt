@@ -1,0 +1,5 @@
+The social media system I choose for assignment 1 was probably reddit and the part of it that I would like to write the TDD approach for is post creation.
+The first test to create would be to redirect o the error 404 page if the post is not found. Then we would go about writing the code with the goal of
+checking if a post with a specified ID exists. Then we would write a test to see if users can access private posts or not. After the test we will write the code to check
+if the post is private or public and if private display a private post error/announcement, if it is not a private post display it. Then we would write a test that creates a post and tries to find it by ID.
+After the test we will need to create functionality to make a post on the client side and send it to the server side.  
