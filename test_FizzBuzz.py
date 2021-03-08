@@ -1,6 +1,7 @@
 import unittest
 from FizzBuzz import is_Fizz
 from FizzBuzz import is_Buzz
+from FizzBuzz import print_num
 # Read program specification
 # Write initial test and run it to ensure it fails
 # Commit changes, Example: "Wrote first test, {test description}”
@@ -9,7 +10,7 @@ from FizzBuzz import is_Buzz
 # Commitchanges,"Implemented x method{implementationdescription}"
 # Write second test
 
-#retunr 0 if not fizz 1 if fizz
+num_array = list(range(1, 101))
 class TestFizzBuzz(unittest.TestCase):
     def test_Fizz(self):
         result = is_Fizz(3)
@@ -25,5 +26,6 @@ class TestFizzBuzz(unittest.TestCase):
         self.assertEqual(result, 1)
         result = is_Buzz(2)
         self.assertEqual(result, 0)
-
-    # def test_num(self):
+    def test_num(self):
+        result = print_num()
+        self.assertEqual(result, num_array)
