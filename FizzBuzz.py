@@ -12,6 +12,10 @@ def is_Buzz(a):
     else:
         return 0
 
+def print_num():
+    num_array = list(range(1, 101))
+    return num_array
+
 def main():
     return 0
 
