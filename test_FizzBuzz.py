@@ -30,7 +30,7 @@ class TestFizzBuzz(unittest.TestCase):
     def test_num(self):
         result = print_num()
         self.assertEqual(result, num_array)
-    #if the nuber of Fizz and FizzBuzz are correct it returns 1
+    #if the nuber of Fizz, Buzz and FizzBuzz are correct it returns 1
     def test_whole(self):
         result = main()
         self.assertEqual(result, 1)
