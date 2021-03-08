@@ -1,4 +1,5 @@
 import unittest
+from FizzBuzz import is_Fizz
 # Read program specification
 # Write initial test and run it to ensure it fails
 # Commit changes, Example: "Wrote first test, {test description}”
@@ -10,11 +11,11 @@ import unittest
 #retunr 0 if not fizz 1 if fizz
 class TestFizzBuzz(unittest.TestCase):
     def test_Fizz(self):
-        result = FizzBuzz.is_Fizz(3)
+        result = is_Fizz(3)
         self.assertEqual(result, 1)
-        result = FizzBuzz.is_Fizz(15)
+        result = is_Fizz(15)
         self.assertEqual(result, 1)
-        result = FizzBuzz.is_Fizz(2)
+        result = is_Fizz(2)
         self.assertEqual(result, 0)
     # def test_Buzz(self):
     #
